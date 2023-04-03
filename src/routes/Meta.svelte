@@ -25,7 +25,6 @@
 	<meta property="og:image" content={image} />
 
 	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content={fullURI} />
 	<meta property="twitter:title" content={titleWithSuffix} />
 	<meta property="twitter:description" content={description} />
