@@ -2,9 +2,6 @@
 	"/": [
 		"src/routes/+page.ts"
 	],
-	"/about": [
-		"src/routes/about/+page.ts"
-	],
 	"/api/loa/user/[id]": [
 		"src/routes/api/loa/user/[id]/+server.ts"
 	],

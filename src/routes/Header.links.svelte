@@ -42,9 +42,6 @@
         </a>
     </li>
     <li class="nav-item">
-        <a href="/lostark/" class="nav-link">
-            <span class="link-text">ARMORY</span>
-        </a>
     </li>
 
     <li class="nav-item">

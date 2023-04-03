@@ -8,19 +8,17 @@ export const nodes = [
 	() => import('./nodes/4'),
 	() => import('./nodes/5'),
 	() => import('./nodes/6'),
-	() => import('./nodes/7'),
-	() => import('./nodes/8')
+	() => import('./nodes/7')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
 		"/": [3],
-		"/about": [4],
-		"/lol/mythic-shop": [~5],
-		"/lol/sale-rotation": [~6],
-		"/lostark/leaderboard": [7],
-		"/lostark/[id]": [~8,[],[2]]
+		"/lol/mythic-shop": [~4],
+		"/lol/sale-rotation": [~5],
+		"/lostark/leaderboard": [6],
+		"/lostark/[id]": [~7,[],[2]]
 	};
 
 export const hooks = {

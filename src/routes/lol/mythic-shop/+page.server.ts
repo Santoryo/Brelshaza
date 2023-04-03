@@ -1,7 +1,4 @@
 import fetch from "node-fetch";
-import {Kayn} from 'kayn'
-import { RIOT_KEY } from '$env/static/private'
-const kayn = Kayn(RIOT_KEY)();
 
 const patches = 
 [

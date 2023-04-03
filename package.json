@@ -1,6 +1,6 @@
 {
 	"name": "brelshaza",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -17,6 +17,7 @@
 		"@playwright/test": "^1.28.1",
 		"@popperjs/core": "^2.11.6",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-node": "^1.2.3",
 		"@sveltejs/kit": "^1.5.0",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -49,7 +50,7 @@
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@fortawesome/react-fontawesome": "^0.2.0",
-		"kayn": "^0.10.2",
+		"dotenv": "^16.0.3",
 		"kit": "github:sveltejs/kit",
 		"moment": "^2.29.4",
 		"mysql": "^2.18.1",
