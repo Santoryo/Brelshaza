@@ -2,9 +2,9 @@
 	import { page } from '$app/stores';
 	export let title: string = 'Brelshaza';
 	export let description: string;
-	export let image = '/image/brelshazauwu.png';
+	export let image = '/images/brelshazauwu.png';
 	export let path = $page.url.pathname;
-	export let domain = 'https://www.mysite.com';
+	export let domain = 'https://www.brelshaza.com/';
 	export let titleSuffix = '';
 	const titleWithSuffix = (titleSuffix === title) ? title : `${title} | ${titleSuffix}`;
 	const fullURI = `${domain}${path}`;
@@ -15,6 +15,7 @@
 	<title>{titleWithSuffix}</title>
 	<meta name="title" content={titleWithSuffix} />
 	<meta name="description" content={description} />
+	<meta name="theme-color" content="#6320ee">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
