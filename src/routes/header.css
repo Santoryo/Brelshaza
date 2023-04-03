@@ -86,9 +86,9 @@
         .hamburger {
             display: block;
             position: fixed;
+            right: 10px;
             top: 10px;
-            left: 10px;
-            color: red;
+            color: white;
             z-index: 1000;
         }
         .navbar {

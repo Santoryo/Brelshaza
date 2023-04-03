@@ -25,7 +25,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a href="/lol/sale-rotation" class="nav-link">
+        <a href="/lol/blitz-and-crank" class="nav-link">
             <span class="link-text">BLITZ & CRANK</span>
         </a>
     </li>

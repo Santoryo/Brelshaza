@@ -8,6 +8,7 @@
 	"/api/loa/[offset]": [
 		"src/routes/api/loa/[offset]/+server.ts"
 	],
+	"/lol/blitz-and-crank": [],
 	"/lol/mythic-shop": [
 		"src/routes/lol/mythic-shop/+page.server.ts"
 	],

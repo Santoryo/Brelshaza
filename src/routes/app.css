@@ -121,7 +121,7 @@ html {
 body {
   color: white;
   font-family: "DrukTextWideHeavy";
-  background: url('/images/background.jpg') no-repeat center center fixed;
+  background: url('/images/background.jpg') repeat center center fixed;
   background-size: cover;
   overflow-y: auto;
   overflow-x: hidden;
@@ -130,4 +130,11 @@ body {
 
 header {
   text-align: center;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

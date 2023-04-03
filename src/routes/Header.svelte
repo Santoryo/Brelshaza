@@ -14,7 +14,7 @@
     
 </script>
 
-<button on:click={toggleNavbar} class="hamburger"><Fa icon={faBars} size="2x"/></button>
+<button on:click={toggleNavbar} class="hamburger"><Fa icon={faBars} size="3x"/></button>
 <MediaQuery query='(max-width: 1034px)' let:matches>
     {#if matches}
         <nav class:navbar={showNavbar}>

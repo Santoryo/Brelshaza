@@ -10,7 +10,18 @@
 <Meta titleSuffix='Home' description='Lost Ark & League of Legends tools'/>
 
 <section>
-<h1 class=' text-center text-6xl'>BRELSHAZA</h1>
-<h1 class=' text-center text-5xl'>MADE BY SANT</h1>
+<h1 class=' text-center text-4xl'>BRELSHAZA</h1>
+<h1 class=' text-center text-3xl'>TOOLS FOR LOST ARK & <br> LEAGUE OF LEGENDS</h1>
+<div class='brelshaza'></div>
 </section>
 
+
+<style>
+.brelshaza {
+	margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-image: url('/images/brelshaza.webp');
+    background-size: contain;
+}
+</style>
