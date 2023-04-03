@@ -44,7 +44,10 @@
     text = item;
   }
 
+  import Meta from '../../Meta.svelte';
 </script>
+
+<Meta titleSuffix='Leaderboard' description='Lost Ark Leaderboard'/>
 
 
 <h1 class='text-center text-4xl'>LOST ARK LEADERBOARD</h1>

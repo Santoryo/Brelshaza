@@ -5,7 +5,10 @@
     /** @type {import('./$types').PageData} */  export let data;
 
     
-  </script>
+    import Meta from '../../Meta.svelte';
+</script>
+
+<Meta titleSuffix='Mythic Shop' description='League of Legends Mythic Shop Rotation'/>
 
 
 

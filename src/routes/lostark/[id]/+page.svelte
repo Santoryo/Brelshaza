@@ -14,7 +14,10 @@
     }
 
 
-  </script>
+    import Meta from '../../Meta.svelte';
+</script>
+
+<Meta titleSuffix={data.id} description='Lost Ark Leaderboard'/>
 
 {#await loadData()}
 <Loader />
@@ -28,6 +31,6 @@
 {/each}
 
 {:else}
-NIE MA KURWA
+This user doesn't have characters.
 {/if}
 {/await}

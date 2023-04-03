@@ -2,8 +2,10 @@
 	//import '../app.postcss';
 	import Header from './Header.svelte';
 	import './app.css';
+	import Analytics from './Analytics.svelte';
 </script>
 
+<Analytics />
 
 
 <div class="app">

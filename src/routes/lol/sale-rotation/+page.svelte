@@ -3,7 +3,10 @@
     import '../rotations.css';
     import moment from 'moment'
     /** @type {import('./$types').PageData} */  export let data;
-  </script>
+    import Meta from '../../Meta.svelte';
+</script>
+
+<Meta titleSuffix='Store Sale' description='League of Legends Weekly Store Sale Rotation'/>
 
 
 <h1 class=' text-center text-4xl'>SALE ROTATION</h1>

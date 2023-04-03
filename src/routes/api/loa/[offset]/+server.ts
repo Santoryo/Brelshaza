@@ -2,7 +2,6 @@ import { error } from '@sveltejs/kit';
 import { mysqlconn } from '$lib/db/mysql';
 import type {RowDataPacket, OkPacket} from "mysql2/promise";
 import { twitchcreds } from '$lib/db/twitch';
-import fetch from 'node-fetch'
 import type { RequestHandler } from '@sveltejs/kit';
 import {json} from '@sveltejs/kit'
 
