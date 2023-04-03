@@ -1,0 +1,24 @@
+{
+	"/": [
+		"src/routes/+page.ts"
+	],
+	"/about": [
+		"src/routes/about/+page.ts"
+	],
+	"/api/loa/user/[id]": [
+		"src/routes/api/loa/user/[id]/+server.ts"
+	],
+	"/api/loa/[offset]": [
+		"src/routes/api/loa/[offset]/+server.ts"
+	],
+	"/lol/mythic-shop": [
+		"src/routes/lol/mythic-shop/+page.server.ts"
+	],
+	"/lol/sale-rotation": [
+		"src/routes/lol/sale-rotation/+page.server.ts"
+	],
+	"/lostark/leaderboard": [],
+	"/lostark/[id]": [
+		"src/routes/lostark/[id]/+page.server.ts"
+	]
+}

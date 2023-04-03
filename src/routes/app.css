@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'DrukTextWideHeavy';
+    src: url('/fonts/0de0c9a3f891b11f8439c802442e96a7.woff2') format('woff2'),
+        url('/fonts/0de0c9a3f891b11f8439c802442e96a7.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DrukXCondSuper';
+  src: url('/fonts/DrukXCond-Super.woff2') format('woff2'),
+      url('/fonts/DrukXCond-Super.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DrukXCondSuper';
+  src: url('/fonts/DrukXCond-SuperItalic.woff2') format('woff2'),
+      url('/fonts/DrukXCond-SuperItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  color: white;
+  font-family: "DrukTextWideHeavy";
+  background: url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 20px;
+}
+
+header {
+  text-align: center;
+}
