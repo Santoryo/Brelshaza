@@ -13,6 +13,11 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	},
+	vite: {
+		server: {
+			port: 3001
+		}
+	},
 	preprocess: vitePreprocess()
 };
 

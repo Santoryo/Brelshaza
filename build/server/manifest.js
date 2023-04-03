@@ -1,19 +1,19 @@
 const manifest = {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["favicon.png","fonts/0de0c9a3f891b11f8439c802442e96a7.woff","fonts/0de0c9a3f891b11f8439c802442e96a7.woff2","fonts/DrukXCond-Super.woff","fonts/DrukXCond-Super.woff2","fonts/DrukXCond-SuperItalic.woff","fonts/DrukXCond-SuperItalic.woff2","images/8.png","images/background.jpg","images/bottom.png","images/brelshaza.gif","images/brelshaza.webp","images/div.png","images/left.png","images/loa/arcanist.png","images/loa/artillerist.png","images/loa/bard.png","images/loa/berserker.png","images/loa/deadeye.png","images/loa/deathblade.png","images/loa/destroyer.png","images/loa/glaiver.png","images/loa/gunlancer.png","images/loa/gunslinger.png","images/loa/paladin.png","images/loa/scrapper.png","images/loa/shadowhunter.png","images/loa/sharpshooter.png","images/loa/sorceress.png","images/loa/soulfist.png","images/loa/striker.png","images/loa/wardancer.png","images/loader1x.gif","images/navbar.png","images/right.png","images/texture.png","images/top.png","robots.txt"]),
+	assets: new Set(["favicon.png","fonts/0de0c9a3f891b11f8439c802442e96a7.woff","fonts/0de0c9a3f891b11f8439c802442e96a7.woff2","fonts/DrukXCond-Super.woff","fonts/DrukXCond-Super.woff2","fonts/DrukXCond-SuperItalic.woff","fonts/DrukXCond-SuperItalic.woff2","images/8.png","images/background.jpg","images/bottom.png","images/brelshaza.gif","images/brelshaza.webp","images/div.png","images/left.png","images/loa/arcanist.png","images/loa/artillerist.png","images/loa/bard.png","images/loa/berserker.png","images/loa/deadeye.png","images/loa/deathblade.png","images/loa/destroyer.png","images/loa/glaiver.png","images/loa/gunlancer.png","images/loa/gunslinger.png","images/loa/paladin.png","images/loa/scrapper.png","images/loa/shadowhunter.png","images/loa/sharpshooter.png","images/loa/sorceress.png","images/loa/soulfist.png","images/loa/striker.png","images/loa/wardancer.png","images/loader1x.gif","images/navbar.png","images/right.png","images/texture.png","images/top.png","private/.env","robots.txt"]),
 	mimeTypes: {".png":"image/png",".woff":"font/woff",".woff2":"font/woff2",".jpg":"image/jpeg",".gif":"image/gif",".webp":"image/webp",".txt":"text/plain"},
 	_: {
-		client: {"start":{"file":"_app/immutable/entry/start.bece39c5.js","imports":["_app/immutable/entry/start.bece39c5.js","_app/immutable/chunks/index.8c9c5232.js","_app/immutable/chunks/singletons.d090bd6d.js","_app/immutable/chunks/index.d87cea17.js","_app/immutable/chunks/paths.63fb21e0.js"],"stylesheets":[],"fonts":[]},"app":{"file":"_app/immutable/entry/app.9de3bd4d.js","imports":["_app/immutable/entry/app.9de3bd4d.js","_app/immutable/chunks/index.8c9c5232.js"],"stylesheets":[],"fonts":[]}},
+		client: {"start":{"file":"_app/immutable/entry/start.717e845a.js","imports":["_app/immutable/entry/start.717e845a.js","_app/immutable/chunks/index.8c9c5232.js","_app/immutable/chunks/singletons.0d8453cb.js","_app/immutable/chunks/index.d87cea17.js","_app/immutable/chunks/paths.fde7694f.js"],"stylesheets":[],"fonts":[]},"app":{"file":"_app/immutable/entry/app.e4d32203.js","imports":["_app/immutable/entry/app.e4d32203.js","_app/immutable/chunks/index.8c9c5232.js"],"stylesheets":[],"fonts":[]}},
 		nodes: [
 			() => import('./chunks/0-037f8005.js'),
-			() => import('./chunks/1-bb6f1709.js'),
-			() => import('./chunks/2-9c5f8677.js'),
+			() => import('./chunks/1-5712ff1f.js'),
+			() => import('./chunks/2-ba8168f6.js'),
 			() => import('./chunks/3-19034581.js'),
 			() => import('./chunks/4-ff036919.js'),
 			() => import('./chunks/5-81fe7058.js'),
 			() => import('./chunks/6-174478a2.js'),
-			() => import('./chunks/7-044b815c.js')
+			() => import('./chunks/7-c19770db.js')
 		],
 		routes: [
 			{
