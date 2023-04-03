@@ -14,7 +14,7 @@
 .loader {
     width: 250px;
     height: 250px;
-    background-image: url('/images/brelshaza.webp');
+    background-image: url('/images/brelshaza.gif');
     background-size: contain;
 }
 </style>

@@ -21,7 +21,7 @@
 	margin-top: 50px;
     width: 300px;
     height: 300px;
-    background-image: url('/images/brelshaza.webp');
+    background-image: url('/images/brelshaza.gif');
     background-size: contain;
 }
 </style>
