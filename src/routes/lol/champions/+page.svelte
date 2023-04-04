@@ -40,6 +40,7 @@
 <h1 class='text-center text-3xl'>THERE ARE {champions.length} CHAMPIONS</h1>
 <div class='skins overflow-y-visible'>
 
+<div class='skins-col'>
 {#each champions as name}
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -48,6 +49,7 @@
 
 </div></a>
 {/each}
+</div>
 </div>
 
 {/await}
