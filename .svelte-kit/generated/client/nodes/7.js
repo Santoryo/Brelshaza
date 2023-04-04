@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/lostark/leaderboard/+page.svelte";
+export { default as component } from "../../../../src/routes/lol/mythic-shop/+page.svelte";

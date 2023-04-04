@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/lol/sale-rotation/+page.svelte";
+export { default as component } from "../../../../src/routes/lol/champions/+page.svelte";

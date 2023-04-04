@@ -1,11 +1,12 @@
 <script>
     import { browser } from '$app/environment';
-    import '../rotations.css';
+    import '../../rotations.css';
     import moment from 'moment'
     /** @type {import('./$types').PageData} */  export let data;
-    import Meta from '../../Meta.svelte';
-    import Icons from '../Icons.svelte';
+    import Meta from '../../../Meta.svelte';
+    import Icons from '../../Icons.svelte';
     import { fade } from 'svelte/transition';
+    import Loader from '../../../Loader.svelte';
 
     let skin;
     let selected;
@@ -14,9 +15,7 @@
 
     async function modal(skinData)
     {
-      const skinId = `${skinData.championId}0${skinData.number.toLocaleString('en-US', {minimumIntegerDigits: 2})}`
-
-      const res = await fetch(`/api/lol/${skinId}`)
+      const res = await fetch(`/api/lol/${skinData.id}`)
       const data = await res.json();
 
       modalActivated = true;
@@ -26,6 +25,18 @@
       champId = skinData.championId
     }
 
+    let skinsData = [];
+
+
+    skinsData = data.champ.skins;
+
+    const _data = data;
+        
+
+
+    
+
+
 </script>
 
 <Meta titleSuffix='Store Sale' description='League of Legends Weekly Store Sale Rotation'/>
@@ -33,19 +44,26 @@
 
 
 
-
-<h1 class=' text-center text-4xl'>SALE ROTATION</h1>
-<h1 class=' text-center text-3xl uppercase'>{moment(data.sale.skins[0].dates.startDate).format('MMM Do')} - {moment(data.sale.skins[0].dates.endDate).format('MMM Do')}</h1>
-<h1 class=' text-center text-2xl uppercase'>ENDS {moment(data.sale.skins[0].dates.endDate).fromNow()}</h1>
+{#await data}
+<Loader />
+{:then}
+<h1 class=' text-center text-4xl uppercase'>{_data.champ.name}</h1>
+<h1 class='text-center text-lg uppercase' style="font-family: 'Inter'">{_data.champ.title}</h1>
 <div class='skins'>
 
 {#if modalActivated}
-<div class='modal' style="background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/{champId}/{skin.info.id}.jpg')" in:fade="{{duration: 200}}" out:fade="{{duration: 200}}">
+<div class='modal' style="background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/{skin.info.id.toString().slice(0, -3)}/{skin.info.id}.jpg')" in:fade="{{duration: 200}}" out:fade="{{duration: 200}}">
 <button class='modal-close' on:click={() => modalActivated=false}>X</button>
 <div class='modal-column' id='m0'>
-    <h1 class='text-2xl uppercase font-extrabold'><a href='/lol/champion/{encodeURIComponent(champId)}'>{skin.name} <Icons size=30 icon={skin.info.rarity} /></a></h1>
-    <span><s><Icons size=15 /> {skin.info.cost}</s> &nbsp; &nbsp; &nbsp; &nbsp; <Icons size=15 /> {selected.discountedPrice} RP</span>
+    <h1 class='text-2xl uppercase font-extrabold'>{skin.name} <Icons size=30 icon={skin.info.rarity} /></h1>
+    {#if skin.info.rarity != 'Mythic'}
+    <span><Icons size=15 /> {skin.info.cost}</span>
+    {:else}
+    <span><Icons size=15 icon='ME' /> {skin.info.distribution}</span>
+    {/if}
+    {#if skin.sale.length > 0}
     <span>LAST TIME ON SALE: {moment(skin.sale[skin.sale.length - 1].skins[0].dates.startDate).format("MMMM Do YYYY")}</span>
+    {/if}
     <span>SKINLINE: <a href='/lol/skinline/{encodeURIComponent(skin.info.set[0])}'><i>{skin.info.set[0]}</i></a></span>
 </div>
 
@@ -70,18 +88,19 @@
   
 </div>
 {/if}
-
-
-
-{#each data.sale.skins as name}
+<div class='skins-col'>
+{#each skinsData as name}
+{#if name.name != 'Original'}
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="skin" style="background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-tiles/{name.championId}/{name.championId}0{name.number.toLocaleString('en-US', {minimumIntegerDigits: 2})}.jpg')" on:click={() => modal(name)}>
-  <span class="percentage">{name.percentage}% OFF</span>
-  <span class="skinInfo">{name.skinName} <br> 
-    <span class="discountRP"><s>{name.originalPrice} RP</s> {name.discountedPrice} RP</span></span>
+<div class="skin" style="background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-tiles/{name.id.toString().slice(0, -3)}/{name.id}.jpg')" on:click={() => modal(name)}>
+  <span class="skinInfo">{name.name} {_data.champ.name}<br> 
 
 </div>
+{/if}
 {/each}
+
 </div>
 
+</div>
+{/await}

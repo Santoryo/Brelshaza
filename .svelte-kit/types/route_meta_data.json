@@ -8,12 +8,22 @@
 	"/api/loa/[offset]": [
 		"src/routes/api/loa/[offset]/+server.ts"
 	],
+	"/api/lol/[skinId]": [
+		"src/routes/api/lol/[skinId]/+server.ts"
+	],
 	"/lol/blitz-and-crank": [],
+	"/lol/champions": [],
+	"/lol/champion/[name]": [
+		"src/routes/lol/champion/[name]/+page.server.ts"
+	],
 	"/lol/mythic-shop": [
 		"src/routes/lol/mythic-shop/+page.server.ts"
 	],
 	"/lol/sale-rotation": [
 		"src/routes/lol/sale-rotation/+page.server.ts"
+	],
+	"/lol/skinline/[name]": [
+		"src/routes/lol/skinline/[name]/+page.ts"
 	],
 	"/lostark/leaderboard": [],
 	"/lostark/[id]": [

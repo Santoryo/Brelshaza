@@ -25,6 +25,11 @@
         </a>
     </li>
     <li class="nav-item">
+        <a href="/lol/champions" class="nav-link">
+            <span class="link-text">CHAMPIONS</span>
+        </a>
+    </li>
+    <li class="nav-item">
         <a href="/lol/blitz-and-crank" class="nav-link">
             <span class="link-text">BLITZ & CRANK</span>
         </a>
