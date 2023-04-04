@@ -38,10 +38,7 @@
 {:then}
 <h1 class=' text-center text-4xl'>LEAGUE OF LEGENDS</h1>
 <h1 class='text-center text-3xl'>THERE ARE {champions.length} CHAMPIONS</h1>
-<div class='skins overflow-y-auto'>
-
-
-
+<div class='skins overflow-y-visible'>
 
 {#each champions as name}
 <!-- svelte-ignore a11y-missing-attribute -->
