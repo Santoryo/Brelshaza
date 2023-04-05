@@ -49,6 +49,7 @@
 {:then}
 <h1 class=' text-center text-4xl uppercase'>{_data.champ.name}</h1>
 <h1 class='text-center text-lg uppercase' style="font-family: 'Inter'">{_data.champ.title}</h1>
+<h1 class='text-center text-md uppercase' style="font-family: 'Inter'">LAST SKIN {moment(skinsData[skinsData.length - 1].release).fromNow()}</h1>
 <div class='skins'>
 
 {#if modalActivated}
