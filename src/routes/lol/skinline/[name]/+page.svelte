@@ -6,6 +6,7 @@
     import Meta from '../../../Meta.svelte';
     import Icons from '../../Icons.svelte';
     import { fade } from 'svelte/transition';
+    import Loader from '../../../Loader.svelte';
 
     let skin;
     let selected;
@@ -60,14 +61,12 @@
 
 </script>
 
-<Meta titleSuffix={skinLine.name} description={skinLine.description}/>
-
-
 
 
 {#await skins()}
-Loading...
+<Loader />
 {:then}
+<Meta titleSuffix={skinLine.name} description={skinLine.description}/>
 <h1 class=' text-center text-4xl uppercase'>{skinLine.name}</h1>
 <h1 class='text-center text-lg uppercase' style="font-family: 'Inter'">{skinLine.description}</h1>
 <div class='skins'>

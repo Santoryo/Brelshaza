@@ -31,8 +31,6 @@
 
 <Meta titleSuffix='Champions' description='League of Legends Champions'/>
 
-
-
 {#await init()}
 <Loader />
 {:then}
