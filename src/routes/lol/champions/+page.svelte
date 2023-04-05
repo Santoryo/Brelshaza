@@ -29,7 +29,7 @@
 
 </script>
 
-<Meta titleSuffix='Store Sale' description='League of Legends Weekly Store Sale Rotation'/>
+<Meta titleSuffix='Champions' description='League of Legends Champions'/>
 
 
 

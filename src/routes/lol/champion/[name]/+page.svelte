@@ -39,7 +39,7 @@
 
 </script>
 
-<Meta titleSuffix='Store Sale' description='League of Legends Weekly Store Sale Rotation'/>
+<Meta titleSuffix={_data.champ.name} description={_data.champ.title}/>
 
 
 

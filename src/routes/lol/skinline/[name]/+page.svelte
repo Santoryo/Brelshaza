@@ -60,7 +60,7 @@
 
 </script>
 
-<Meta titleSuffix='Store Sale' description='League of Legends Weekly Store Sale Rotation'/>
+<Meta titleSuffix={skinLine.name} description={skinLine.description}/>
 
 
 
