@@ -7,6 +7,7 @@
     import Icons from '../../Icons.svelte';
     import { fade } from 'svelte/transition';
     import Loader from '../../../Loader.svelte';
+    import buffer from 'buffer'
 
     let skin;
     let selected;
@@ -33,6 +34,13 @@
     const _data = data;
         
 
+    function ObjectIdToTimestamp(_objectid)
+    {
+      const objectIdBin = buffer.Buffer.from(_objectid, 'hex');
+      const timestamp = new Date(parseInt(objectIdBin.toString('hex').substring(0, 8), 16) * 1000);
+      console.log(timestamp)
+      return timestamp;
+    }
 
     
 
@@ -63,7 +71,11 @@
     <span><Icons size=15 icon='ME' /> {skin.info.distribution}</span>
     {/if}
     {#if skin.sale.length > 0}
+    {#if skin.info.rarity != 'Mythic'}
     <span>LAST TIME ON SALE: {moment(skin.sale[skin.sale.length - 1].skins[0].dates.startDate).format("MMMM Do YYYY")}</span>
+    {:else}
+    <span>LAST TIME IN MYTHIC SHOP: {moment(ObjectIdToTimestamp(skin.sale[0]._id)).format("MMMM Do YYYY")}</span>
+    {/if}
     {/if}
     <span>SKINLINE: <a href='/lol/skinline/{encodeURIComponent(skin.info.set[0])}'><i>{skin.info.set[0]}</i></a></span>
 </div>

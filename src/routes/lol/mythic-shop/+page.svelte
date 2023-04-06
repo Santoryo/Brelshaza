@@ -18,7 +18,7 @@
 
     async function modal(skinData)
     {
-      const skinId = `${skinData.championId}0${skinData.skinId}`
+      const skinId = `${skinData.championId}0${skinData.skinId.toLocaleString('en-US', {minimumIntegerDigits: 2})}`
 
       const res = await fetch(`/api/lol/${skinId}`)
       const data = await res.json();

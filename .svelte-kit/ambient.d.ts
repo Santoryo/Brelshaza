@@ -34,7 +34,6 @@ declare module '$env/static/private' {
 	export const MYSQL_USER: string;
 	export const MYSQL_PASS: string;
 	export const MYSQL_DB: string;
-	export const PORT: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
@@ -157,7 +156,6 @@ declare module '$env/dynamic/private' {
 		MYSQL_USER: string;
 		MYSQL_PASS: string;
 		MYSQL_DB: string;
-		PORT: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
