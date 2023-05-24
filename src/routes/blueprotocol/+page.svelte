@@ -1,21 +1,7 @@
 <script lang='ts'>
     /** @type {import('./$types').PageData} */  export let data: any;
     import {marked} from 'marked'
-    import {markedEmoji} from "marked-emoji";
 
-    import {Octokit} from "@octokit/rest";
-    const octokit = new Octokit();
-    const res = await octokit.rest.emojis.get();
-    const emojis = res.data;
-
-    const options = {
-        emojis,
-        unicode: false,
-    };
-
-    const doc: any = data.results.documents[0].content
-
-    marked.use(markedEmoji(options));
 
 </script>
 
