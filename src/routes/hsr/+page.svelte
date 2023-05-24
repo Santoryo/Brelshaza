@@ -6,8 +6,6 @@ let submittedValue: any = null;
 import { goto, invalidateAll } from '$app/navigation';
 
 
-function goTo()
-
 </script>
 
 
@@ -17,7 +15,8 @@ function goTo()
 <h1 class='text-center text-lg uppercase' style="font-family: 'Inter'">For everyone. Without registering.</h1>
 
 <form on:submit|preventDefault={() => goto(`/hsr/${value}`)}>
-    <input type='text' class='bg-transparent rounded-2xl w-32' style="font-family: 'Inter'" bind:value>
+    <input type='text' class='bg-transparent rounded-2xl w-64 mt-12' style="font-family: 'Inter'" bind:value placeholder="e.g 101005845">
+    <button on:click={() => goto(`/hsr/${value}`)}>Search</button>
 </form>
 
 </div>

@@ -58,6 +58,8 @@
 		"dompurify": "^3.0.3",
 		"dotenv": "^16.0.3",
 		"dotenv-flow": "^3.2.0",
+		"html-to-image": "^1.11.11",
+		"html2canvas": "^1.4.1",
 		"kit": "github:sveltejs/kit",
 		"linkify-it": "^4.0.1",
 		"moment": "^2.29.4",
@@ -68,6 +70,7 @@
 		"node-adapter": "^1.0.11",
 		"objectid": "^3.2.1",
 		"sharp": "^0.32.1",
+		"svelte-component-to-image": "^0.1.0",
 		"svelte-markdown": "^0.2.3",
 		"svelte-media-queries": "^1.5.4"
 	}
