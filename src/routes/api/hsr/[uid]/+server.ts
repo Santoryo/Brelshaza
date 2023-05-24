@@ -4,7 +4,14 @@ export const GET = async ({params}) => {
 
 
     const res = await fetch(`https://api.mihomo.me/sr_info_parsed/${params.uid}?lang=en`)
-    const results = await res.json();
+    let results = await res.json();
+
+    const regex = /\.png\b/gi;
+    results = JSON.stringify(results).replace(regex, '.webp');
+    results = JSON.parse(results);
+
+
+
 
     const options: ResponseInit = {
       status: 418,

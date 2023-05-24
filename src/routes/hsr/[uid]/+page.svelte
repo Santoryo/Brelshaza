@@ -4,6 +4,7 @@
     import { browser } from '$app/environment';
     import Loader from '../../Loader.svelte';
     import { page } from '$app/stores'
+    import { fade } from 'svelte/transition';
 
     import './styles.css'
 
@@ -24,7 +25,7 @@
     selected = user.characters[0];
     }
 
-    const cdn = "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/"
+    const cdn = "/images/hsr/"
 
 
 
@@ -70,7 +71,7 @@
         <div class='flex flex-row gap-5 items-center content-center'>
         {#each user.characters as character}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class='char-circle' style="background-image: url('{cdn + "/icon/avatar/" + character.id + ".png"}')" on:click={() => handleHover(event, character)}></div>
+        <div class='char-circle' style="background-image: url('{cdn + "icon/avatar/" + character.id + ".webp"}')" on:click={() => handleHover(event, character)}></div>
         {/each}
         </div>
     </div>
@@ -95,7 +96,7 @@
             <div class='w-10 h-10 rounded-full bg-black mb-2 bg-style' style="background-image: url('{cdn + eid.icon}')"></div>
         {:else}
             <div class='relative w-10 h-10 rounded-full bg-black mb-2'>
-            <div class='w-10 h-10 rounded-full bg-black opacity-80 bg-style z-10 absolute top-0 left-0 rotate-45 -scale-x-100' style="background-image: url('{cdn + "icon/sign/InventoryFosterIcon.png"}')"></div>
+            <div class='w-10 h-10 rounded-full bg-black opacity-80 bg-style z-10 absolute top-0 left-0 rotate-45 -scale-x-100' style="background-image: url('{cdn + "icon/sign/InventoryFosterIcon.webp"}')"></div>
             <div class='w-10 h-10 rounded-full bg-black bg-style absolute top-0 left-0' style="background-image: url('{cdn + eid.icon}')"></div>
             </div>
         {/if}
@@ -142,17 +143,14 @@
         {#each Object.entries(selected.relic) as [key, value], index (key)}
     
         <div class='stat-row flex-nowrap'>
-            {#await getIcon(selected.relic[key].name)}
-            {:then icon}
             <div class='flex flex-row w-1/3 h-[4.6rem] relative justify-end pr-2'>
-            <div class='h-20 w-20 text-left font-semibold text-sm uppercase rounded-md absolute left-0 -z-1 item-portrait' style="background-image: url('{cdn + icon}')"></div>
+            <div class='h-20 w-20 text-left font-semibold text-sm uppercase rounded-md absolute left-0 -z-1 item-portrait' style="background-image: url('{cdn + selected.relic[key].icon}')"></div>
             <div class="h-20 w-20 flex flex-col items-end self-end z-10">
             <img src={cdn + selected.relic[key].main_property.icon} class='w-7 h-7 z-10' alt="xd">
             <div class='text-2xl z-10 font-bold'>{selected.relic[key].main_property.value}</div>
             <div class='text-sm z-10 font-semibold'>+{selected.relic[key].level}</div>
         </div>
              </div>
-            {/await}
             <!-- <div class='h-10 w-1/3 text-right right-0 top-0 font-semibold uppercase rounded-md mr-2 flex flex-col absolute'>
                 {#each relic.sub_property as prop}
                 <div class='bg-style h-7 w-7' style="background-image: url('{cdn + prop.icon}')"></div>
