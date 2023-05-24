@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/lol/blitz-and-crank/+page.svelte";
+export { default as component } from "../../../../src/routes/blueprotocol/+page.svelte";

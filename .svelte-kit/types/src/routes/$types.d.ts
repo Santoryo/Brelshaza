@@ -10,8 +10,8 @@ type EnsureDefined<T> = T extends null | undefined ? {} : T;
 type OptionalUnion<U extends Record<string, any>, A extends keyof U = U extends U ? keyof U : never> = U extends unknown ? { [P in Exclude<A, keyof U>]?: never } & U : never;
 export type Snapshot<T = any> = Kit.Snapshot<T>;
 type PageParentData = EnsureDefined<LayoutData>;
-type LayoutRouteId = RouteId | "/" | "/lol/blitz-and-crank" | "/lol/champion/[name]" | "/lol/champions" | "/lol/mythic-shop" | "/lol/sale-rotation" | "/lol/skinline/[name]" | "/lostark/leaderboard" | "/lostark/[id]" | null
-type LayoutParams = RouteParams & { name?: string,id?: string }
+type LayoutRouteId = RouteId | "/" | "/blueprotocol" | "/hsr" | "/hsr/[uid]" | "/lol/blitz-and-crank" | "/lol/champion/[name]" | "/lol/champions" | "/lol/mythic-shop" | "/lol/sale-rotation" | "/lol/skinline/[name]" | "/lostark/leaderboard" | "/lostark/[id]" | "/portfolio" | null
+type LayoutParams = RouteParams & { uid?: string,name?: string,id?: string }
 type LayoutParentData = EnsureDefined<{}>;
 
 export type PageServerData = null;

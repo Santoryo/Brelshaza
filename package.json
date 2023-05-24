@@ -52,10 +52,14 @@
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@octokit/rest": "^19.0.11",
+		"@types/marked": "^5.0.0",
 		"buffer": "^6.0.3",
+		"dompurify": "^3.0.3",
 		"dotenv": "^16.0.3",
 		"dotenv-flow": "^3.2.0",
 		"kit": "github:sveltejs/kit",
+		"linkify-it": "^4.0.1",
 		"moment": "^2.29.4",
 		"mongodb": "^4.0.0-beta.3",
 		"mongodb-client-encryption": "^2.7.1",
@@ -63,6 +67,7 @@
 		"mysql2": "^3.2.0",
 		"node-adapter": "^1.0.11",
 		"objectid": "^3.2.1",
+		"svelte-markdown": "^0.2.3",
 		"svelte-media-queries": "^1.5.4"
 	}
 }

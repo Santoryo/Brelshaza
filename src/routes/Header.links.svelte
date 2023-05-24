@@ -38,14 +38,15 @@
 
     <li class="nav-item">
         <span class="nav-link-category">
-            <span class="link-category">LOST ARK</span>
+            <span class="link-category">HONKAI STAR RAIL</span>
         </span>
     </li>
     <li class="nav-item">
-        <a href="/lostark/leaderboard" class="nav-link" data-sveltekit-preload-data>
-            <span class="link-text">LEADERBOARD</span>
+        <a href="/hsr" class="nav-link">
+            <span class="link-text">PLAYER CARD</span>
         </a>
     </li>
+
     <li class="nav-item">
     </li>
 

@@ -2,6 +2,12 @@
 	"/": [
 		"src/routes/+page.ts"
 	],
+	"/api/hsr/item/[id]": [
+		"src/routes/api/hsr/item/[id]/+server.ts"
+	],
+	"/api/hsr/[uid]": [
+		"src/routes/api/hsr/[uid]/+server.ts"
+	],
 	"/api/loa/user/[id]": [
 		"src/routes/api/loa/user/[id]/+server.ts"
 	],
@@ -10,6 +16,13 @@
 	],
 	"/api/lol/[skinId]": [
 		"src/routes/api/lol/[skinId]/+server.ts"
+	],
+	"/blueprotocol": [
+		"src/routes/blueprotocol/+page.server.ts"
+	],
+	"/hsr": [],
+	"/hsr/[uid]": [
+		"src/routes/hsr/[uid]/+page.server.ts"
 	],
 	"/lol/blitz-and-crank": [],
 	"/lol/champions": [],
@@ -28,5 +41,6 @@
 	"/lostark/leaderboard": [],
 	"/lostark/[id]": [
 		"src/routes/lostark/[id]/+page.server.ts"
-	]
+	],
+	"/portfolio": []
 }

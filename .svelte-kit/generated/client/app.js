@@ -12,21 +12,29 @@ export const nodes = [
 	() => import('./nodes/8'),
 	() => import('./nodes/9'),
 	() => import('./nodes/10'),
-	() => import('./nodes/11')
+	() => import('./nodes/11'),
+	() => import('./nodes/12'),
+	() => import('./nodes/13'),
+	() => import('./nodes/14'),
+	() => import('./nodes/15')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
 		"/": [3],
-		"/lol/blitz-and-crank": [4],
-		"/lol/champions": [6],
-		"/lol/champion/[name]": [~5],
-		"/lol/mythic-shop": [~7],
-		"/lol/sale-rotation": [~8],
-		"/lol/skinline/[name]": [9],
-		"/lostark/leaderboard": [10],
-		"/lostark/[id]": [~11,[],[2]]
+		"/blueprotocol": [~4],
+		"/hsr": [5],
+		"/hsr/[uid]": [~6],
+		"/lol/blitz-and-crank": [7],
+		"/lol/champions": [9],
+		"/lol/champion/[name]": [~8],
+		"/lol/mythic-shop": [~10],
+		"/lol/sale-rotation": [~11],
+		"/lol/skinline/[name]": [12],
+		"/lostark/leaderboard": [13],
+		"/lostark/[id]": [~14,[],[2]],
+		"/portfolio": [15]
 	};
 
 export const hooks = {

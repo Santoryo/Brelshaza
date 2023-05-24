@@ -28,7 +28,7 @@ async function getUser(user: string) {
 
         for (let i = 0; i < rows.length; i++)
         {
-          names.push(rows[i].data.pcName)
+          names.push(rows[i].data)
         }
         
 

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .inter {
+        font-family: 'Inter';
+    }
+
+    .small-text {
+        @apply
+        text-lg
+        font-bold
+        text-white
+        inter
+        uppercase
+    }
+    .small-quote {
+        @apply
+        text-white
+        inter
+    }
+    .char-circle
+    {
+        background-position: center;
+        background-size: cover;
+        @apply
+        w-24 h-24 bg-transparent rounded-full
+        border-2 border-blue-200
+        cursor-pointer
+        transition-all duration-200 ease-linear
+        hover:border-2 hover:border-blue-500
+        hover:bg-blue-200
+
+    }
+    .char-portrait
+    {
+        /* background-position-x: -300px;
+        background-position-y: -150px; */
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: top right;
+        background-blend-mode: multiply;
+        -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 86%, rgba(0,212,255,0) 100%); 
+        mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 86%, rgba(0,212,255,0) 100%);
+    }
+
+    .item-portrait
+    {
+        /* background-position-x: -300px;
+        background-position-y: -150px; */
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center;
+        background-blend-mode: multiply;
+        -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,212,255,0) 100%); 
+        mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,212,255,0) 100%);
+    }
+
+    .details {
+        filter: drop-shadow(0 0px 10px rgb(0 0 0 / 4)) drop-shadow(0 0px 10px rgb(0 0 0 / 0.1));
+        -webkit-filter: drop-shadow(0 0px 10px rgb(0 0 0 / 4)) drop-shadow(0 0px 10px rgb(0 0 0 / 0.1));
+
+    }
+    .bg-style
+    {
+        background-position: center;
+        background-size: cover;
+    }
+    .avatar
+    {
+        background-position: center;
+        background-size: 128%;
+    }
+    .stat-row {
+        @apply
+        py-2
+        rounded-lg
+        flex flex-row
+        transition-all duration-200 ease-linear
+        hover:bg-white/20
+    }
+    .prop-row {
+        @apply
+        rounded-lg
+        flex flex-row
+        transition-all duration-200 ease-linear
+        hover:bg-white/20
+    }
+
+}
